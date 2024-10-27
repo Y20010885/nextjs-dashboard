@@ -1,3 +1,7 @@
+import "@/app/ui/global.css";
+import { roboto } from "./ui/fonts";
+import React from "react";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${roboto.className} mantialiased`}>{children}</body>
     </html>
   );
 }
